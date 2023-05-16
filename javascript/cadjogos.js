@@ -27,3 +27,18 @@ $(document).ready(function() {
         }
     });
 });
+
+// Busca de dados na tabela de consoles no banco de dados.
+$(document).ready(function() {
+    $.ajax({
+        url:        "php/buscaconsoles.php",
+        type:       "POST",
+        dataType:   "html",
+        success: function(data) {
+            $('consoles').html(data);
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            console.log(textStatus, errorThrown);
+        }
+    });
+});
