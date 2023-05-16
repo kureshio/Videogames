@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro de consoles</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/consoles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- Formulário de cadastro -->
+    <h1>Cadastro de Consoles</h1>
+    <form id="meuForm">     
+        <label for="nome">Nome do Console:</label>
+		<input type="text" id="nome"><br>
+
+	    <label for="fabricante">Fabricante:</label>
+	    <select id="fabricante" name="fabricante">
+	    </select><br>
+        <div class="form-group">
+            <label for="ativo" style="display: inline-block; margin-right: 10px;">Ativo:</label>    
+		    <input type="checkbox" id="ativo" name="ativo"><br>
+        </div>
+
+	    <input type="button" value="Adicionar" onclick="adicionarConsole()" id="add-btn">
+        <button type="button" class="btn btn-success" id="gravar-btn">Gravar</button>
+    </form>
+
+    <!-- Tabela de consoles cadastrados -->
+	<table id="tabelaConsoles">
+		<thead>
+			<tr>
+				<th>Nome do console</th>
+                <th hidden>Id</th>
+				<th>Fabricante</th>
+				<th>Ativo</th>
+                <th>Remover</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+
+	<script src="javascript/consoles.js"></script>
+</body>
+</html>
+

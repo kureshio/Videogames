@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro de video-games</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/cadjogos.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid no-padding">
+        <nav>
+            <ul>
+                <li><a href="#">INICIAL</a></li>
+                <li><a href="#">JOGOS</a>
+                    <ul>
+                        <li><a href="cadjogos.html">Cadastro</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">CONSOLES</a></li>
+                <li><a href="#">CADASTROS</a></li>
+                <li><a href="#">SAIR</a></li>
+            </ul>
+        </nav>
+        <section>
+            <div class="borda titulo-cadastro">CADASTRO DE VIDEOGAMES
+            </div>
+            
+            <div class="borda">
+                <form class="form-group">
+                    <label for="nome">Nome do Jogo:</label> <br />
+                    <input type="text" id="nome" name="nome" maxlength="400" title="Digite o nome do video-jogo" placeholder="Digite o nome do jogo" required autofocus> 
+                    <br class="br-margin"/>
+                    <div>
+                        <div style="display: inline-block; width: 248px;">
+                            <label>Desenvolvedora</label><br />
+                            <select style="width: 100%;"></select>
+                        </div>
+                        <div style="display: inline-block; width: 248px;">
+                            <label>Distribuidora</label><br />
+                            <select style="width: 100%;"></select>
+                        </div>
+                    </div>
+                    <br class="br-margin" />
+                    <label>Data de lançamento:</label> <br />
+                    <input type="date" id="lancamento">
+
+                    <br class="br-margin" />
+
+                    <input type="checkbox" id="console" class="cursor-pointer">&nbsp;<label for="console" class="cursor-pointer">Tem para console?</label>
+
+                    <br class="br-margin" />
+
+                    <fieldset id="borda-fieldset" disabled>
+                        <legend class="w-auto">Seleção de consoles</legend>
+                    </fieldset>
+                    <br class="br-margin" />
+
+                    <input type="checkbox" id="computador" class="cursor-pointer">&nbsp;<label for="computador" class="cursor-pointer">Tem para computador?</label>
+                    
+                    <br class="br-margin">
+
+                    <fieldset id="borda-fieldset" disabled>
+                        <legend class="w-auto">Seleção de plataformas</legend>
+                    </fieldset>
+                    
+                    <br class="br-margin">
+
+                    <button id="confirmar">Confirmar</button>
+                
+                </form>
+            </div>
+            
+        </section>
+    </div>
+    <script src="javascript/cadjogos.js"></script>
+</body>
+</html>
