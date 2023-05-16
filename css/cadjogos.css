@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+.no-padding{
+    padding: 0;
+}
+.form-group label {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: green;
+}
+
+.form-group input {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+.borda {
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 20px;
+
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 2px;
+    border-radius: 4px;
+
+    box-shadow: rgba(0,0,0,0.16) 0px 1px 4px;
+}
+
+.br-margin {
+            display: block; /* makes it have a width */
+            content: ""; /* clears default height */
+            margin-top: 12px; /* change this to whatever height you want it */
+}
+
+label {
+    margin: 0px;
+}
+
+#nome {
+    width: 500px;
+}
+
+#lancamento {
+    width: 248px;
+}
+
+.titulo-cadastro {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+}
+#borda-fieldset {
+    font-family: 'Rajdhani', sans-serif;
+
+    border-style: solid;
+    border-width: 2px;
+    
+    width: 500px;
+    height: auto;
+    
+    padding: 5px;
+
+    background-color: #eeeeee;
+
+}
+legend {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: gray;
+    color: white;
+    padding: 5px 10px;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
