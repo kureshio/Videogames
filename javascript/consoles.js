@@ -1,17 +1,3 @@
-$(document).ready(function() {
-    $.ajax({
-        url: 'php/buscandofabricante.php',
-        type: 'GET',
-        dataType: 'html',
-        success: function(data) {
-            $('#fabricante').html(data);
-        },
-        error: function(jqXHR, textStatus, errorThrown) {
-            console.log(textStatus, errorThrown);
-        }
-    });
-});
-
 const addButton = document.getElementById("add-btn");
 
 addButton.addEventListener("click", function() {
